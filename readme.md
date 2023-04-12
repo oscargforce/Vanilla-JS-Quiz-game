@@ -1,7 +1,7 @@
 # Quiz game with vanilla JS and sass.
 
 ### API:
- - Shout out to https://the-trivia-api.com/ for providing with a free API and making this project possible.
+ - Shout out to https://the-trivia-api.com/ for providing a free API and making this project possible.
 
  ### Design:
   - Inspired by this project: https://www.youtube.com/watch?v=Tkp3FDgOueM&t=42s
