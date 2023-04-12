@@ -1,0 +1,31 @@
+.header {
+  display: inline-block;
+  color: transparent;
+  -webkit-background-clip: text;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+
+  &-container {
+    text-align: center;
+  }
+  &--one {
+    font-size: 10rem;
+    background-image: linear-gradient(to bottom, $color-blue, #fff);
+    transition: all 0.2s;
+    
+    &:hover {
+      transform: skewY(2deg) skewX(15deg) scale(1.1);
+      text-shadow: .5rem 1rem 2rem rgba(255,255,255, .2);
+    }
+  }
+  &--two {
+    font-size: 5rem;
+    background-image: linear-gradient(to bottom, $color-blue, rgba(white, 0.8));
+  }
+  &--four {
+    font-size: 2rem;
+    font-weight: 600;
+    background-image: linear-gradient(to bottom, $color-blue, red);
+  }
+}

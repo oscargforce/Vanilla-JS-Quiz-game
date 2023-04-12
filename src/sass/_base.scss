@@ -1,0 +1,44 @@
+$color-blue: #0ef;
+$color-blue-dark: #37a0a8;
+$color-white: #feffff;
+$color-grey-dark: #333;
+
+$color-primary: #222734;
+$box-shadow-light: 0 0.6rem 1rem rgba($color-white, 0.1);
+$gradient-black-transperant: linear-gradient(45deg, #000, transparent);
+
+
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+
+  @include respond('xl') {
+    font-size: 52.5%;
+  }
+}
+
+body {
+  background-color: $color-primary;
+  padding: 7rem 10% 0;
+  font-family: Lato;
+  line-height: 1.6;
+  
+  @include respond('large') {
+    padding: 7rem 0 0;
+  }
+}
+
+// Typedjs dependency.
+.typed-cursor {
+  color: $color-blue;
+  font-size: 5rem;
+}

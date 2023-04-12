@@ -1,0 +1,53 @@
+.result {
+    margin: 0 auto;
+    padding: 5rem 0;
+    max-width: 120rem;
+    text-align: center;
+    background-image: $gradient-black-transperant;
+    box-shadow: $box-shadow-light;
+
+    @include respond('large') {
+        max-width:none;
+      }
+
+    &__title {
+        font-size: 4rem;
+        color: $color-white;
+    }
+    &__icon-container {
+        position: relative;
+        // Set background for the svg
+        &::after {
+            content: '';
+            background-image: linear-gradient(rgba(#fff, 0.5), transparent);
+            height: 6.5rem;
+            width: 6.5rem;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left:50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    &__icon {
+        height: 6.5rem;
+        width: 6.5rem;
+
+        &--wrong {
+            color:red;
+        }
+        &--right {
+            color: green;
+        }
+    }
+
+    &__answer {
+        font-size: 1.8rem;
+        color: $color-white;
+    }
+
+    // If you answer all questions right.
+    &__win {
+        animation: popOut 2s ease;
+    }
+}

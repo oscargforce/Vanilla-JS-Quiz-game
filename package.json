@@ -1,0 +1,32 @@
+{
+  "name": "quiz",
+  "version": "1.0.0",
+  "description": "",
+  "source": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist",
+    "sass": "sass src/sass/main.scss src/css/main.css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "typed.js": "^2.0.14"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.3",
+    "assert": "^2.0.0",
+    "browserify-zlib": "^0.2.0",
+    "constants-browserify": "^1.0.0",
+    "events": "^3.3.0",
+    "os-browserify": "^0.3.0",
+    "parcel": "^2.8.3",
+    "path-browserify": "^1.0.1",
+    "punycode": "^1.4.1",
+    "querystring-es3": "^0.2.1",
+    "sass": "^1.60.0",
+    "stream-browserify": "^3.0.0",
+    "url": "^0.11.0",
+    "util": "^0.12.5"
+  }
+}

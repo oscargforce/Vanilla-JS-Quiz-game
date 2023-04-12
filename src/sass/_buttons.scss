@@ -1,0 +1,33 @@
+.btn {
+  border: none;
+  padding: 1.8rem 3rem;
+  border-radius: 0.4rem;
+  text-transform: uppercase;
+  transition: all 0.2s;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.03) translateY(-0.2rem);
+  }
+  &:active {
+    transform: scale(1) translateY(0);
+  }
+
+  &--primary {
+    background-color: $color-blue;
+    box-shadow: 0 0 3rem rgba($color-blue, 1);
+    color: $color-primary;
+  }
+
+  &--secondary {
+    box-shadow: 0 0.4rem 1rem rgba($color-white, 0.1);
+    //#323946
+    background: linear-gradient(to right bottom, #282e38 0%, transparent 90%);
+    color: $color-blue;
+  }
+}
+
+.disable-button {
+  pointer-events: none;
+  background: gray;
+}
