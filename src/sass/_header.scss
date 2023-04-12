@@ -5,7 +5,6 @@
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
-  margin-bottom: 5rem;
 
   &-container {
     text-align: center;
@@ -14,10 +13,10 @@
     font-size: 10rem;
     background-image: linear-gradient(to bottom, $color-blue, #fff);
     transition: all 0.2s;
-    
+
     &:hover {
       transform: skewY(2deg) skewX(15deg) scale(1.1);
-      text-shadow: .5rem 1rem 2rem rgba(255,255,255, .2);
+      text-shadow: 0.5rem 1rem 2rem rgba(255, 255, 255, 0.2);
     }
   }
   &--two {
